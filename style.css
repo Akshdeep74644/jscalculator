@@ -1,0 +1,75 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgb(65 180 173);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    flex-direction: column;
+    gap: 5px;
+    width: 230px;
+    height: 320px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #323d43;
+    overflow: hidden;
+}
+
+.container .input_box{
+    width: 100%;
+}
+
+.container .input_box input{
+    width: 100%;
+    height: 70px;
+    font-size: 2vw;
+    pointer-events: none;
+    outline: none;
+    padding: 0px 10px;
+    text-align:end;
+    color: #000;
+    border: none;
+    background-color: #f9f9f9be;
+}
+
+.container .buttons_box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+
+.container .buttons_box .box input{
+    width: 50px;
+    height: 40px;
+    background: transparent;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .buttons_box .box .c_btn_zero{
+    width: 100px;
+}
+
+.CE_text{
+    position: absolute;
+    top: 3%;
+    font-size: 0.9vw;
+    right: 6%;
+}
